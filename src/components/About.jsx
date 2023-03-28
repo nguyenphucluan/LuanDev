@@ -9,10 +9,10 @@ const ServiceCard = ({index,title,icon,intro})=>{
     <div className='xs:w-[350px] w-full '>
       <motion.div 
         variants={fadeIn("right","spring",0.5 * index,0.75)}
-        className='w-full p-[1px] rounded-[20px] shadow-card'
+        className='w-full p-[1px] rounded-[20px] shadow-card border-2 border-violet-900'
       >
         <div
-          className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col' 
+          className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-center items-center flex-col' 
         >
           <img 
             src={icon} 

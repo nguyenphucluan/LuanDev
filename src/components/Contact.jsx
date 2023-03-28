@@ -66,7 +66,7 @@ const Contact = () => {
       <div className='xl:mt-12 xl:flex-row flex-col flex gap-10 overflow-hidden'>
         <motion.div
           variants={fadeIn("right","tween",0.2,1)}
-          className='xl:flex-1  xl:h-auto md:h-[550px] h-[700px] leading-5'
+          className='relative xl:flex-1  xl:h-auto md:h-[550px] h-fit leading-5'
         >
           <div className='pt-5'>
             <p className='text-[32px] pt-5 leading-10 px-3'>
@@ -86,9 +86,9 @@ const Contact = () => {
                 <img src={email} className="w-[50px] h-[50px] inline-block"/>
                 <span className='text-violet-900'>nguyenphucluan19022000@gmail.com</span>
               </div>
-              <div className='flex flex-row pt-10 justify-center items-center'>
+              <div className='flex flex-row xss:flex-col xs:flex-row pt-10 justify-center items-center'>
                 {socials.map((social)=>(
-                  <a key={social.name} href={social.href} className=' px-5 mx-3 '>
+                  <a key={social.name} href={social.href} className='flex flex-row xss:flex-col py-3 px-5 mx-3 '>
                     <motion.img 
                       src={social.src}
                       className="w-[50px] h-[50px]"
@@ -104,7 +104,7 @@ const Contact = () => {
         </motion.div>
         <motion.div
           variants={fadeIn("right","tween",1,1)}
-          className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+          className="relative flex-[0.75] bg-black-100 p-8 rounded-2xl"
           
         >
           <h3 className={`${styles.sectionHeadText} font-medium text-center text-violet-900`}>Liên hệ</h3>

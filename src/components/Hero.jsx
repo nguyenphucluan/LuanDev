@@ -1,7 +1,6 @@
 import React from 'react'
 import {motion} from "framer-motion"
 import {styles} from '../styles'
-import {github,facebook,linkedin,download} from '../assets'
 import {avatar,cv} from '../assets'
 import { TypeAnimation } from 'react-type-animation';
 import {staggerContainer} from '../utils/motion'
@@ -88,7 +87,7 @@ const Hero = () => {
         <div className='relative flex w-full lg:w-1/2 h-full lg:h-1/2'>
           <img 
             src={avatar}
-            className="relative mx-auto w-[400px] h-2/3 lg:h-[500px] lg:w-[400px] "
+            className="relative xss:h-full xs:h-4/5 sm:w-4/5 sm:h-4/5 mx-auto w-[400px] h-2/3 lg:h-[600px] lg:w-[550px] "
           />
           
         </div>
