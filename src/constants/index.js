@@ -250,17 +250,17 @@ import {
     {
       name:"facebook",
       src:facebook,
-      href:"https://www.facebook.com"
+      href:"https://www.facebook.com/profile.php?id=100015600511705"
     },
     {
       name:"linkedin",
       src:linkedin,
-      href:"https://www.facebook.com"
+      href:"https://www.linkedin.com/in/nguy%E1%BB%85n-ph%C3%BAc-lu%C3%A2n-2b7937240/"
     },
     {
       name:"github",
       src:github,
-      href:"https://www.facebook.com"
+      href:"https://github.com/nguyenphucluan"
     },
   ]
   

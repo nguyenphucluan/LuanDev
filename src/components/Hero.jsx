@@ -2,9 +2,10 @@ import React from 'react'
 import {motion} from "framer-motion"
 import {styles} from '../styles'
 import {github,facebook,linkedin,download} from '../assets'
-import {avatar} from '../assets'
+import {avatar,cv} from '../assets'
 import { TypeAnimation } from 'react-type-animation';
 import {staggerContainer} from '../utils/motion'
+import {socials} from "../constants" 
 
 const Hero = () => {
   return (
@@ -52,45 +53,35 @@ const Hero = () => {
                 <span>Liên Hệ &nbsp; </span>
               </motion.button>
             </motion.a>
-            <motion.button 
-              className='w-1/2 flex items-center justify-center h-[50px] bg-violet-900 mx-5 rounded-3xl mb-5 max-w-xs'
-              whileHover={{
-                scale:1.1
-              }}
+            <a 
+            href={cv} 
+            download="NguyenPhucLuanCV.pdf"
+            className='w-1/2 flex items-center justify-center h-[50px] bg-violet-900 mx-5 rounded-3xl mb-5 max-w-xs'
             >
-              <span>CV của mình &nbsp; </span>  <img src={download} className='w-[20px] h-[20px]' styles={{color:'white'}}/>
-            </motion.button>
+              <motion.button 
+                className=''
+                whileHover={{
+                  scale:1.1
+                }}
+              >
+                <span>CV của mình &nbsp; </span>
+              </motion.button>
+            </a>
           </div>
           <div className='flex flex-row items-center justify-center pt-5'>
               Follow mình:
-              <motion.a 
-                href="https://www.facebook.com/"
-                whileHover={{scale:1.1}}
-              >
-                <img 
-                  src={github}
-                  className="w-[50px] h-[50px] mx-5 cursor-pointer"
-                />
-              </motion.a>
-              <motion.a 
-                href="https://www.facebook.com/"
-                whileHover={{scale:1.1}}
-              >
-                <img 
-                  src={facebook}
-                  className="w-[50px] h-[50px] mx-5 cursor-pointer"
-                />
-              </motion.a>
-              <motion.a 
-                href="https://www.facebook.com/"
-                whileHover={{scale:1.1}}
-              >
-                <img 
-                  src={linkedin}
-                  className="w-[50px] h-[50px] mx-5 cursor-pointer"
-                />
-                
-              </motion.a>  
+              {socials.map((social)=>(
+                <motion.a 
+                  key={social.name}
+                  href={social.href}
+                  whileHover={{scale:1.1}}
+                >
+                  <img 
+                    src={social.src}
+                    className="w-[50px] h-[50px] mx-5 cursor-pointer"
+                  />
+                </motion.a>
+              ))}
             </div>  
         </div>
 

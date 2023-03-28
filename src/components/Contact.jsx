@@ -1,7 +1,7 @@
 import React,{useState,useRef} from 'react'
 import {motion} from 'framer-motion'
 import {styles} from '../styles'
-import {slideIn} from '../utils/motion'
+import {fadeIn,zoomIn} from '../utils/motion'
 import {staggerContainer} from '../utils/motion'
 import emailjs from '@emailjs/browser'
 import {github,location,phone,email} from "../assets"
@@ -65,7 +65,7 @@ const Contact = () => {
     >
       <div className='xl:mt-12 xl:flex-row flex-col flex gap-10 overflow-hidden'>
         <motion.div
-          variant={slideIn("right","tween",0.2,1)}
+          variants={fadeIn("right","tween",0.2,1)}
           className='xl:flex-1  xl:h-auto md:h-[550px] h-[700px] leading-5'
         >
           <div className='pt-5'>
@@ -103,7 +103,7 @@ const Contact = () => {
           </div>
         </motion.div>
         <motion.div
-          variant={slideIn("left","tween",0.2,1)}
+          variants={fadeIn("right","tween",1,1)}
           className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
           
         >

@@ -32,9 +32,11 @@ import techstore from "./projects/Tech-Store.png"
 import email from "./contact/email.png"
 import location from "./contact/location.jpg"
 import phone from "./contact/phone.png"
+import cv from "../assets/Nguyen-Phuc-Luan-CV.pdf"
 
 export {
   logo,
+  cv,
   avatar,
   email,
   location,
