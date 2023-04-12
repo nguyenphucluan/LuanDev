@@ -18,7 +18,8 @@ import {
     techshop,
     techstore,
     port,
-    finance
+    finance,
+    facebook_ui
   } from "../assets";
   
   export const navLinks = [
@@ -244,6 +245,28 @@ import {
       image: finance,
       source_code_link: "https://github.com/nguyenphucluan/finance-template",
       source_live_demo: "https://nguyenphucluan.github.io/finance-template/",
+    },
+    {
+      name: "Facebook clone Ui",
+      description:
+        "Facebook clone ui .",
+      tags: [
+        {
+          name: "ReactJs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "TailwindCss",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Mui",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: facebook_ui,
+      source_code_link: "https://github.com/nguyenphucluan/facebook-clone-ui.git",
+      source_live_demo: "https://facebook-clone-ui.vercel.app/",
     },
   ];
   const socials =[

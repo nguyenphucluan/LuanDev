@@ -28,11 +28,13 @@ import lol from "./projects/LOL-client.png"
 import port from "./projects/Port-Template.png"
 import techshop from "./projects/Tech-Shop.png"
 import techstore from "./projects/Tech-Store.png"
+import facebook_ui from "./projects/facebook.png"
 
 import email from "./contact/email.png"
 import location from "./contact/location.jpg"
 import phone from "./contact/phone.png"
 import cv from "../assets/Nguyen-Phuc-Luan-CV.pdf"
+
 
 export {
   logo,
@@ -64,5 +66,6 @@ export {
   lol,
   port,
   techshop,
-  techstore
+  techstore,
+  facebook_ui
 };
