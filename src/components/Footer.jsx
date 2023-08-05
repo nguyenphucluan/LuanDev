@@ -13,7 +13,7 @@ const Footer = () => {
       className={`${styles.padding} mx-auto relative z-0 bg-primary`}
       id="contact"
     >
-        <div className='flex text-pink-600'>
+        <div className='flex text-orange-500'>
             Cảm ơn mọi người đã xem hết trang web của mình nha. Mọi người có thể để lại góp ý tại phần Contact để giúp mình hoàn hiện hơn.
             Xin cảm ơn nhiều ạ. 
         </div>

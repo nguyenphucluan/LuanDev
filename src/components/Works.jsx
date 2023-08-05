@@ -28,7 +28,7 @@ const ProjectCard = ({index,name,description,tags,image,source_code_link,source_
               <motion.img 
                 src={github}
                 alt="github"
-                className=' object-contain bg-tertiary border-2 border-violet-900 px-3 mx-3 h-10 rounded-xl outline-none w-fit'
+                className=' object-contain bg-tertiary border-2 border-violet-900 px-1  mx-3 h-10 rounded-xl outline-none w-[50px]'
                 whileHover={{scale:1.1}}
               />
             </div>
@@ -38,12 +38,12 @@ const ProjectCard = ({index,name,description,tags,image,source_code_link,source_
               whileHover={{scale:1.1}}
               onClick={()=>window.open(source_live_demo,"_blank")}
             >
-              <span className='text-violet-900'>Live Demo</span>
+              <span className='text-orange-500'>Live Demo</span>
             </motion.button>
           </div>
         </div>
         <div className='mt-5 w-full'>
-          <h3 className='text-white fontn-bold text-[24px]'>{name}</h3>
+          <h3 className='text-orange-500 font-bold text-[24px]'>{name}</h3>
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
         <div className='mt-4 flex flex-wrap gap-2'>

@@ -25,7 +25,7 @@ const Navbar = () => {
           <img 
             src={logo} 
             alt="logo" 
-            className='w-9 h-9 object-contain'
+            className='w-9 h-9 object-contain rounded-full'
           />
           <p className='text-white text-[18px] font-bold cursor-pointer flex'> 
             Luan &nbsp;
@@ -38,9 +38,9 @@ const Navbar = () => {
               key={link.id}
               className={`${
                 active === link.title
-                  ? "text-violet-900"
+                  ? "text-orange-500"
                   : "text-white"
-              } hover:text-violet-900 text-[18px] font-medium cursor-pointer 
+              } hover:text-orange-500 text-[18px] font-medium cursor-pointer 
               `}
               onClick={()=> setActive(link.title)}
             >

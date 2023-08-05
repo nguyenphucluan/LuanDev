@@ -31,6 +31,7 @@ const ServiceCard = ({index,title,icon,intro})=>{
 
 const About = () => {
   return <>
+    {/* moi nhat nha */}
     <motion.div
        initial="hidden"
        whileInView="show"

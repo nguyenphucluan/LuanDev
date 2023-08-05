@@ -21,6 +21,10 @@ const Contact = () => {
 
     setForm({...form,[name]:value})
   }
+  const handleEmailClick = () => {
+    // Do any logic you want before redirecting (if needed)
+    console.log("Email icon clicked!");
+  };
 
   const handleSubmit = (e) =>{
     e.preventDefault()
@@ -76,15 +80,19 @@ const Contact = () => {
             <div className='flex flex-col leading-5'> 
               <div className='text-[24px] my-3'>
                 <img src={location} className="w-[50px] h-[50px] inline-block"/>
-                <span className='text-violet-900'>TPHCM , Việt Nam</span> 
+                <span className='text-orange-500'>TPHCM , Việt Nam</span> 
               </div>
               <div className='text-[24px] my-3'>
                 <img src={phone} className="w-[50px] h-[50px] inline-block"/>
-                <span className='text-violet-900'>(+84) 366 874 330</span>
+                <span className='text-orange-500'>(+84) 705 021 310</span>
               </div>
               <div className='text-[24px] my-3'>
                 <img src={email} className="w-[50px] h-[50px] inline-block"/>
-                <span className='text-violet-900'>nguyenphucluan19022000@gmail.com</span>
+                <span 
+                   
+                  className='text-orange-500 cursor-pointer'
+                 
+                >nguyenphucluan19022000@gmail.com</span>
               </div>
               <div className='flex flex-row xss:flex-col xs:flex-row pt-10 justify-center items-center'>
                 {socials.map((social)=>(
@@ -112,14 +120,14 @@ const Contact = () => {
           className="relative flex-[0.75] bg-black-100 p-8 rounded-2xl"
           
         >
-          <h3 className={`${styles.sectionHeadText} font-medium text-center text-violet-900`}>Liên hệ</h3>
+          <h3 className={`${styles.sectionHeadText} font-medium text-center text-orange-500`}>Liên hệ</h3>
           <form
             ref={formRef}
             onSubmit={handleSubmit}
             className='mt-12 flex flex-col gap-8'
           >
             <label className='flex flex-col'>
-            <span className='text-violet-900 font-medium mb-4'>Tên của bạn:</span>
+            <span className='text-white font-medium mb-4'>Tên của bạn:</span>
             <input
               type='text'
               name='name'
@@ -131,7 +139,7 @@ const Contact = () => {
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-violet-900 font-medium mb-4'>Email:</span>
+            <span className='text-white font-medium mb-4'>Email:</span>
             <input
               type='email'
               name='email'
@@ -143,7 +151,7 @@ const Contact = () => {
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-violet-900 font-medium mb-4'>Lời nhắn</span>
+            <span className='text-white font-medium mb-4'>Lời nhắn</span>
             <textarea
               rows={7}
               name='message'

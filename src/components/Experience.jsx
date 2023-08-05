@@ -24,7 +24,7 @@ const ExperienceCard = ({experience})=>(
     }
   >
     <div>
-      <h3 className='text-violet-900 text-[24px] font-bold'>
+      <h3 className='text-orange-500 text-[24px] font-bold'>
         {experience.title}
       </h3>
 
@@ -47,7 +47,7 @@ const ExperienceCard = ({experience})=>(
     </ul>
     <div className='flex items-center justify-center py-3'>
       <motion.button 
-        className=' border-2 border-violet-900 text-violet-900 w-[150px] h-[50px] rounded-3xl'
+        className=' border-2 border-violet-900 text-orange-500 w-[150px] h-[50px] rounded-3xl'
         whileHover={{
           scale:1.1
         }}

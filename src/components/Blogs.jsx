@@ -28,7 +28,7 @@ const ProjectCard = ({index,name,description,image,source_code_link})=>{
           />
         </div>
         <div className='mt-5'>
-          <h3 className='text-white fontn-bold text-[24px]'>{name}</h3>
+          <h3 className='text-orange-500 font-bold text-[24px]'>{name}</h3>
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
       </Tilt>
@@ -47,7 +47,7 @@ const Blogs = () => {
       id="blogs"
     >
       <motion.div variants= {textVariant()} className="relative text-center lg:text-left" whileHover={{scale:1.1, left:50}}>
-          <span className={`${styles.heroHeadText} text-pink-600 `}>
+          <span className={`${styles.heroHeadText} text-white `}>
             &lt;Blogs&frasl; &gt;
           </span>
         </motion.div>

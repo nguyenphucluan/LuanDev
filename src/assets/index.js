@@ -1,4 +1,4 @@
-import logo from "./navbar/logo.svg";
+import logo from "./navbar/logo.png";
 import menu from "./navbar/menu.svg";
 import close from "./navbar/close.svg";
 

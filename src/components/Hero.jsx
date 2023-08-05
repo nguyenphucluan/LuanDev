@@ -17,9 +17,9 @@ const Hero = () => {
       id="home"
     >
       <section className={` mb-5 relative top-[50px] w-full h-[1000px] lg:h-[700px] flex flex-col lg:flex-row`}>
-        <div className="relative mt-10 text-center lg:text-left w-full lg:w-1/2 h-full lg:h-1/2 leading-loose ">
+        <div className="relative mt-10 text-center lg:text-left w-full lg:w-1/2 h-full lg:h-1/2 leading-10 ">
           <h2 className={`${styles.heroSubText} text-white`}>Xin chào, Mình là</h2>
-          <h1 className={`${styles.heroHeadText} font-bold text-violet-900`}>Nguyễn Phúc Luân</h1>
+          <h1 className={`${styles.heroHeadText} font-bold text-orange-500`}>Nguyễn Phúc Luân</h1>
           <TypeAnimation
             className={`${styles.heroSubText} text-white`}
             sequence={[
@@ -35,7 +35,7 @@ const Hero = () => {
             repeat={Infinity}
             style={{ fontSize: '2em', display: 'inline-block' }}
           />
-          <p className={`${styles.sectionSubText} text-secondary`}>
+          <p className={`${styles.sectionSubText} text-slate-500`}>
             Mình là Front-End Dev ReactJs biết về UI/Ux Deisgn. Sẵn sàng học hỏi những kiến thức mới nhằm hoàn thiện bản thân hơn. Với mong muốn được học hỏi kiến thức và kinh nghiệm từ mọi người nhiều hơn.
           </p>
           <div className='relative flex flex-col justify-center items-center md:flex-row pt-5'>
@@ -52,20 +52,21 @@ const Hero = () => {
                 <span className ="text-white">Liên Hệ &nbsp; </span>
               </motion.button>
             </motion.a>
-            <a 
+            <motion.a 
               href={cv} 
               download="NguyenPhucLuanCV.pdf"
               className='w-1/2 flex items-center justify-center h-[50px] bg-violet-900 mx-5 rounded-3xl mb-5 max-w-xs'
+              whileHover={{
+                  scale:1.1
+                }}
             >
               <motion.button 
                 className=''
-                whileHover={{
-                  scale:1.1
-                }}
+
               >
                 <span>CV của mình &nbsp; </span>
               </motion.button>
-            </a>
+            </motion.a>
           </div>
           <div className='flex flex-row items-center justify-center pt-5'>
               Follow mình:
