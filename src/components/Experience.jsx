@@ -14,7 +14,7 @@ const ExperienceCard = ({experience})=>(
     date={experience.date}
     iconStyle={{background:experience.iconBg}}
     icon={
-      <div className='flex justify-center items-center w-full h-full'>
+      <div className='flex w-full h-full'>
         <img
           src={experience.icon}
           alt={experience.company_name}
@@ -67,23 +67,20 @@ const Experience = () => {
         initial="hidden"
         whileInView="show"
         viewport={{once:true,amount:0.25}}
-        className={`${styles.padding} max-w-7xl mx-auto relative z-0 bg-primary`}
+        className={`${styles.padding}  mx-auto relative z-0 bg-primary`}
         id="experience"
       >
         <motion.div variants= {textVariant()} className="relative text-center lg:text-left" whileHover={{scale:1.1, left:50}}>
           <span className={`${styles.heroHeadText}  `}>
             &lt;Experience&frasl; &gt;
           </span>
-          <span className={`${styles.heroHeadText} absolute text-violet-900 inset-0 top-0`}> 
-            &lt;Experience&frasl; &gt;
-          </span>
+          
         </motion.div>
         <div className='mt-20 flex flex-col'>
           <VerticalTimeline>
             {experiences.map((experience,index)=>(
               <ExperienceCard key={index} experience={experience} />
             ))}
-
           </VerticalTimeline>
         </div>
       </motion.div>

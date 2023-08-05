@@ -13,9 +13,9 @@ const  App = () => {
         <Tech/>
         <Experience/>
         <Works/>
-        {/* <Blogs/> */}
+        <Blogs/>
         <Contact/>
-        {/* <Footer/> */}
+        <Footer/>
       </div>
     </BrowserRouter>
   )

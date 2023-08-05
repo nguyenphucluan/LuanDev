@@ -13,11 +13,11 @@ const Hero = () => {
       initial="hidden"
       whileInView="show"
       viewport={{once:true,amount:0.25}}
-      className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
+      className={`${styles.padding} mx-auto relative z-0`}
       id="home"
     >
-      <section className={`${styles.paddingX} mb-5 relative top-[50px] w-full h-[1000px] lg:h-[700px]  flex flex-col lg:flex-row`}>
-        <div className="relative text-center lg:text-left w-full lg:w-1/2 h-full lg:h-1/2 leading-loose">
+      <section className={` mb-5 relative top-[50px] w-full h-[1000px] lg:h-[700px] flex flex-col lg:flex-row`}>
+        <div className="relative mt-10 text-center lg:text-left w-full lg:w-1/2 h-full lg:h-1/2 leading-loose ">
           <h2 className={`${styles.heroSubText} text-white`}>Xin chào, Mình là</h2>
           <h1 className={`${styles.heroHeadText} font-bold text-violet-900`}>Nguyễn Phúc Luân</h1>
           <TypeAnimation
@@ -36,7 +36,7 @@ const Hero = () => {
             style={{ fontSize: '2em', display: 'inline-block' }}
           />
           <p className={`${styles.sectionSubText} text-secondary`}>
-            Mình là Front-End Dev ReactJs mong muốn được học hỏi kiến thức và kinh nghiệm từ mọi người để hoàn thiện hơn.
+            Mình là Front-End Dev ReactJs biết về UI/Ux Deisgn. Sẵn sàng học hỏi những kiến thức mới nhằm hoàn thiện bản thân hơn. Với mong muốn được học hỏi kiến thức và kinh nghiệm từ mọi người nhiều hơn.
           </p>
           <div className='relative flex flex-col justify-center items-center md:flex-row pt-5'>
             <motion.a 
@@ -49,13 +49,13 @@ const Hero = () => {
               <motion.button 
                 className=''
               >
-                <span>Liên Hệ &nbsp; </span>
+                <span className ="text-white">Liên Hệ &nbsp; </span>
               </motion.button>
             </motion.a>
             <a 
-            href={cv} 
-            download="NguyenPhucLuanCV.pdf"
-            className='w-1/2 flex items-center justify-center h-[50px] bg-violet-900 mx-5 rounded-3xl mb-5 max-w-xs'
+              href={cv} 
+              download="NguyenPhucLuanCV.pdf"
+              className='w-1/2 flex items-center justify-center h-[50px] bg-violet-900 mx-5 rounded-3xl mb-5 max-w-xs'
             >
               <motion.button 
                 className=''
@@ -72,8 +72,8 @@ const Hero = () => {
               {socials.map((social)=>(
                 <motion.a 
                   key={social.name}
-                  href={social.href}
                   whileHover={{scale:1.1}}
+                  onClick={()=>window.open(social.href,"_blank")}
                 >
                   <img 
                     src={social.src}
@@ -81,7 +81,7 @@ const Hero = () => {
                   />
                 </motion.a>
               ))}
-            </div>  
+          </div>  
         </div>
 
         <div className='relative flex w-full lg:w-1/2 h-full lg:h-1/2'>

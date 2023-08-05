@@ -10,7 +10,7 @@ const Footer = () => {
       initial="hidden"
       whileInView="show"
       viewport={{once:true,amount:0.25}}
-      className={`${styles.padding} max-w-7xl mx-auto relative z-0 bg-primary`}
+      className={`${styles.padding} mx-auto relative z-0 bg-primary`}
       id="contact"
     >
         <div className='flex text-pink-600'>

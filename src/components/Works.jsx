@@ -10,7 +10,7 @@ const ProjectCard = ({index,name,description,tags,image,source_code_link,source_
   return (
     <motion.div variants={fadeIn("up","spring",index * 0.5,0.75)}>
       <div
-        className='bg-tertiary p-5 rounded-2xl md:w-[350px] w-full h-full flex-wrap border-2 border-violet-900'
+        className='bg-tertiary p-5 rounded-2xl border-2 border-violet-900 h-full'
       >
         <div className='relative w-full h-[230px]'>
           <img 
@@ -66,14 +66,11 @@ const Works = () => {
       initial="hidden"
       whileInView="show"
       viewport={{once:true,amount:0.25}}
-      className={`${styles.padding} max-w-7xl mx-auto relative z-0 `}
+      className={`${styles.padding} mx-auto relative z-0 `}
       id="work"
     >
       <motion.div variants= {textVariant()} className="relative text-center lg:text-left" whileHover={{scale:1.1, left:50}}>
           <span className={`${styles.heroHeadText}  `}>
-            &lt;Projects&frasl; &gt;
-          </span>
-          <span className={`${styles.heroHeadText} absolute text-violet-900 inset-0 top-0`}> 
             &lt;Projects&frasl; &gt;
           </span>
         </motion.div>
@@ -81,12 +78,12 @@ const Works = () => {
       <div className='w-full flex'> 
         <motion.p
           variants={pVariant()}
-          className="mt-3 text-secondary text-[17px] max-w-7xl leading-[30px]"
+          className="mt-3 text-secondary text-[17px] leading-[30px]"
         >
           Bên dưới là những sản phẩm đơn giản mình từng làm. Có nhiều thiếu sót và mình luôn mong muốn học hỏi những cái mới để có thể phát triển tốt hơn những dự án của mình.
         </motion.p>
       </div>
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className='mt-20 grid xss:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-7'>
         {projects.map((project,index)=>(
           <ProjectCard 
             key={`project-${index}`}

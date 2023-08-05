@@ -43,14 +43,11 @@ const Blogs = () => {
       initial="hidden"
       whileInView="show"
       viewport={{once:true,amount:0.25}}
-      className={`${styles.padding} max-w-7xl mx-auto relative z-0 bg-primary`}
+      className={`${styles.padding} mx-auto relative z-0 bg-primary`}
       id="blogs"
     >
       <motion.div variants= {textVariant()} className="relative text-center lg:text-left" whileHover={{scale:1.1, left:50}}>
           <span className={`${styles.heroHeadText} text-pink-600 `}>
-            &lt;Blogs&frasl; &gt;
-          </span>
-          <span className={`${styles.heroHeadText} absolute inset-0 top-0`}> 
             &lt;Blogs&frasl; &gt;
           </span>
         </motion.div>

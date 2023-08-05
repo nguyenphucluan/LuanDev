@@ -49,7 +49,7 @@ import {
     },
     {
       title: "UI Design",
-      icon: design,
+      icon: figma,
       intro:" Figma "
     },
     {

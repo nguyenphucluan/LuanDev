@@ -60,7 +60,7 @@ const Contact = () => {
       initial="hidden"
       whileInView="show"
       viewport={{once:true,amount:0.25}}
-      className={`${styles.padding} max-w-7xl mx-auto relative z-0 bg-primary`}
+      className={`${styles.padding} mx-auto relative z-0 bg-primary`}
       id="contact"
     >
       <div className='xl:mt-12 xl:flex-row flex-col flex gap-10 overflow-hidden'>
@@ -88,7 +88,12 @@ const Contact = () => {
               </div>
               <div className='flex flex-row xss:flex-col xs:flex-row pt-10 justify-center items-center'>
                 {socials.map((social)=>(
-                  <a key={social.name} href={social.href} className='flex flex-row xss:flex-col py-3 px-5 mx-3 '>
+                  <a 
+                    key={social.name} 
+                    // href={social.href} 
+                    onClick={()=>window.open(social.href,"_blank")}
+                    className='flex flex-row xss:flex-col py-3 px-5 mx-3 cursor-pointer '
+                  >
                     <motion.img 
                       src={social.src}
                       className="w-[50px] h-[50px]"
